@@ -73,6 +73,8 @@ const nextConfig = {
       pagesBufferLength: 2,
     },
     // Target modern browsers to reduce polyfills
+    swcMinify: true,
+    // Modern build target - reduces legacy JavaScript
     compiler: {
       // Remove console.log in production
       removeConsole: process.env.NODE_ENV === 'production',
